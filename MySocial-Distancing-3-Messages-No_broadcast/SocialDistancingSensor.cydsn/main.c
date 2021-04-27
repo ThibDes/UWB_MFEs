@@ -255,7 +255,6 @@ void socialDistancindLoop(){
             
     state = STATE_INITIATE_CONTACT; 
     deviceID = rand() & 0xFF;
-    uint8_t results[NUMBER_OF_ANCHOR - 1][DATA_LEN]; 
     uint distancesList[NUMBER_OF_ANCHOR - 1][2]; 
     uint dist = 0; 
     for (int i = 0;i < NUMBER_OF_ANCHOR-1; i++){
@@ -263,7 +262,6 @@ void socialDistancindLoop(){
             distancesList[i][j] = 0; 
         }        
     }
-    uint deviceCounter = 0; 
 //////////////////////////////////////////   
     
     for (;;){
@@ -338,25 +336,12 @@ void socialDistancindLoop(){
                         DWM_ReadSPI_ext(DRX_CONF,RF_CONF,CFO_Rx_M_8,3);
                         DWM_ReadSPI_ext(RX_TIME,NO_SUB, t4_8,5);
                         remoteDeviceID = msg.from;
-                        if (remoteDeviceID != results[deviceCounter][0]){
-                            for (int i = 0 ; i < 1; i++){
-                                results[deviceCounter][i] = remoteDeviceID; 
-                            }
-                            for (int i = 1 ; i < 6; i++){
-                                results[deviceCounter][i] = t1_8[i-1];
-                            }
-                            for (int i = 6 ; i < 11; i++){
-                                results[deviceCounter][i] = t4_8[i-6];
-                            }
-                            for (int i = 11 ; i < 14; i++){
-                                results[deviceCounter][i] = CFO_Rx_M_8[i-11];
-                            } 
-                            uint flag = 1; 
-                            if (msg.data != 0 && msg.data < 10000){ //as dist has been casted in uint, if it is equal to 0 we had a computation error 
-                                for (int i = 0 ; i<NUMBER_OF_ANCHOR-1; i++){
-                                    if (distancesList[i][0] == (uint) remoteDeviceID){
-                                        distancesList[i][1] = (uint) msg.data; 
-                                        flag = 0; 
+                        uint flag = 1; // used to check if the remote device ID already exists in the distancesList
+                        if (msg.data != 0 && msg.data < 10000){ //as dist has been casted in uint, if it is equal to 0 we had a computation error 
+                            for (int i = 0 ; i<NUMBER_OF_ANCHOR-1; i++){
+                                if (distancesList[i][0] == (uint) remoteDeviceID){
+                                    distancesList[i][1] = (uint) msg.data; 
+                                    flag = 0; 
                                     }
                                 }
                                 if (flag){
@@ -370,41 +355,34 @@ void socialDistancindLoop(){
                                     distancesList[index][1] = (uint) msg.data; 
                                 }
                             }
-                            deviceCounter = deviceCounter + 1;
-                            state = STATE_PREPARE_TO_LISTEN;
+                        state = STATE_SEND_RESULTS;
+                        messageTimeout = MESSAGE_TIMEOUT; //added
+                        uint distMin = 10000; 
+                        for (int i = 0 ; i<NUMBER_OF_ANCHOR-2 ; i++){
+                            if (distMin > distancesList[i][1] && distancesList[i][1]>0){
+                            distMin = distancesList[i][1]; 
+                            }
                         }
-                    }                  
+                        if (distMin > 0 && distMin < 10000){
+                                if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM * 3){ //3
+                                    alertOn = 1;
+                                }
+                                if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM * 2){
+                                    alertOn = 2;
+                                }
+                                if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM){
+                                    alertOn = 3;
+                                }
+                                if (distMin < SAFE_DISTANCE_CM){
+                                    alertOn = 4;
+                                }
+                            }                              
+                        }                                      
                     else{
                         state = STATE_PREPARE_TO_LISTEN; // @TODO Verif
                         break; 
                     }
-                }
-                if ((deviceCounter == NUMBER_OF_ANCHOR-1 || messageTimeout < 50)&&deviceCounter>0){                        
-                    state = STATE_SEND_RESULTS;
-                    deviceCounter = 0; 
-                    messageTimeout = MESSAGE_TIMEOUT; //added
-                    uint distMin = 10000; 
-                    for (int i = 0 ; i<NUMBER_OF_ANCHOR-2 ; i++){
-                        if (distMin > distancesList[i][1] && distancesList[i][1]>0){
-                        distMin = distancesList[i][1]; 
-                        }
-                    }
-                    if (distMin > 0 && distMin < 10000){
-                            if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM * 3){ //3
-                                alertOn = 1;
-                            }
-                            if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM * 2){
-                                alertOn = 2;
-                            }
-                            if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM){
-                                alertOn = 3;
-                            }
-                            if (distMin < SAFE_DISTANCE_CM){
-                                alertOn = 4;
-                            }
-                        }                    
-                   }
-
+                }             
                 break;
                 
             case STATE_ANSWER:
@@ -427,7 +405,7 @@ void socialDistancindLoop(){
                     TxOk = 0;
                     DWM_ReadSPI_ext(TX_TIME, NO_SUB, t3_8, 5);                    
                     state = STATE_PREPARE_WAIT_FOR_RESULTS;
-                    messageTimeout = MESSAGE_TIMEOUT*NUMBER_OF_ANCHOR*50;  
+                    messageTimeout = MESSAGE_TIMEOUT;  
                 }
                 break;
            
@@ -455,36 +433,23 @@ void socialDistancindLoop(){
                     uint8_t len;
                     uint flag = 0; 
                     DWM_ReadSPI_ext(RX_FINFO, NO_SUB, &len, 1);
-                    if (len == (NUMBER_OF_ANCHOR-1)*DATA_LEN + 2){
-                        for (int i = 0;i < NUMBER_OF_ANCHOR-1; i++){
-                            for (int j = 0; j < DATA_LEN; j++){
-                                results[i][j] = RxData[i*DATA_LEN+ j]; 
-                            }        
-                        }
-                        
-                        /*for (int j = 1; j < DATA_LEN; j++){
-                           results[0][j-1] = RxData[j]; 
-                        }
-                        results[0][DATA_LEN-1] = RxData[len-2]; */
-                        
-                        for (int i = 0;i < NUMBER_OF_ANCHOR-1; i++){
-                            if (results[i][0] == deviceID){
-                                flag = 1; 
-                                for (int j=0;j<5;j++){
-                                    t1_8[j] = results[i][j+1]; // the +1 is here to do not take the deviceID
-                                    t4_8[j] = results[i][j+6];
-                                }
-                                for (int j= 0; j<3; j++){
-                                    CFO_Rx_M_8[j] = results[i][j+11];                        
-                                }
+                    if (len == DATA_LEN + 2){
+                        if (RxData[0] == deviceID){
+                            flag = 1; 
+                            for (int j=0;j<5;j++){
+                                t1_8[j] = RxData[j+1]; // the +1 is here to do not take the deviceID
+                                t4_8[j] = RxData[j+6];
                             }
-                            
+                            for (int j= 0; j<3; j++){
+                                CFO_Rx_M_8[j] = RxData[j+11];                        
+                            }
                         }
                         if (flag){
                             state = STATE_PROCESS_RESULTS;
                             RxOk = 0;
                         }
-                    }else{
+                    }
+                    else{
                         state = STATE_PREPARE_TO_LISTEN;
                     }
                 }
@@ -582,21 +547,22 @@ void socialDistancindLoop(){
                 break;
                
             case STATE_SEND_RESULTS:
-                
                 idle();
-                for (int i = 0;i < NUMBER_OF_ANCHOR-1; i++){
-                    for (int j = 0; j < DATA_LEN; j++){
-                        TxData[i*DATA_LEN+ j] = results[i][j]; 
-                    }        
-                }                 
+                TxData[0] = remoteDeviceID; 
+                for (int i = 1 ; i < 6; i++){
+                    TxData[i] = t1_8[i-1];
+                    }
+                for (int i = 6 ; i < 11; i++){
+                    TxData[i] = t4_8[i-6];
+                    }
+                for (int i = 11 ; i < 14; i++){
+                    TxData[i] = CFO_Rx_M_8[i-11];
+                    }                  
                 
-                DWM_SendData(TxData, (NUMBER_OF_ANCHOR-1)*DATA_LEN, 1);      //MODIFY DATA LEN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                DWM_SendData(TxData,DATA_LEN, 1);      //MODIFY DATA LEN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 
                 
                 //erases the id to avoid sending of old info
-                for (int i = 0;i < NUMBER_OF_ANCHOR-1; i++){
-                    results[i][0] = 0x00; 
-                }
                 state = STATE_SEND_RESULTS_PENDING;
                 messageTimeout = MESSAGE_TIMEOUT;
                 break;
