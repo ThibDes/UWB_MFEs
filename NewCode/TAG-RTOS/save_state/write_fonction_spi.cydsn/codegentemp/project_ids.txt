@@ -1,6 +1,0 @@
-C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\TAG-RTOS\save_state\write_fonction_spi.cydsn\write_fonction_spi.cyprj|13bfccb0-a151-43e9-9c0d-8818bffdca74
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|931afc1c-0fe9-49ae-b1be-6a8bdf8f5962
-C:\Users\Pierre Vander Eyken\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|678a24c9-5827-470e-8637-c7764349eff2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|0fa54bc4-9a42-4079-80ac-ef00ca0201cc
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|c1ec8d02-b43a-4499-a3ba-93494907d16f
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|080ddbb0-7028-46ce-aac2-fe90b7df92dc
