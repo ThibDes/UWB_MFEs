@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32552d5f-bbd3-4720-b6f5-223f4696af6c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1p48AJH7P9rAFZZcXNeI94RgRAJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\logic analyser\logic_analyserRTOS" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="logic_analyserRTOS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Pierre Vander Eyken\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="main.py" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32552d5f-bbd3-4720-b6f5-223f4696af6c" name="Default Changelist" comment="" />
+      <created>1614430856808</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614430856808</updated>
+      <workItem from="1614430858011" duration="2875000" />
+      <workItem from="1614523954576" duration="907000" />
+      <workItem from="1614603223176" duration="651000" />
+      <workItem from="1615384191729" duration="936000" />
+      <workItem from="1615646283341" duration="58000" />
+      <workItem from="1615729831473" duration="612000" />
+      <workItem from="1617197719505" duration="1226000" />
+      <workItem from="1617201355351" duration="43000" />
+      <workItem from="1617277262896" duration="511000" />
+      <workItem from="1617624909512" duration="196000" />
+      <workItem from="1617798507228" duration="956000" />
+      <workItem from="1617801013657" duration="3987000" />
+      <workItem from="1617806769592" duration="91000" />
+      <workItem from="1617983388594" duration="142000" />
+      <workItem from="1618002669243" duration="32000" />
+      <workItem from="1618317418989" duration="4653000" />
+      <workItem from="1618327304277" duration="17000" />
+      <workItem from="1618405430738" duration="2322000" />
+      <workItem from="1618408442849" duration="1104000" />
+      <workItem from="1618413834194" duration="1532000" />
+      <workItem from="1618423747730" duration="2109000" />
+      <workItem from="1618477091147" duration="459000" />
+      <workItem from="1618478254675" duration="816000" />
+      <workItem from="1618497033706" duration="18000" />
+      <workItem from="1618924688834" duration="5167000" />
+      <workItem from="1618998301161" duration="48000" />
+      <workItem from="1619090512581" duration="753000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614431511269">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1614431511269" />
+    <state x="534" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618928333923">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="534" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1618928333923" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1618998347034">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618998347034" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1618479084341">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618479084341" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1618479084341">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618479084341" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1618479084341">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618479084341" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1618479084341">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618479084341" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/logic_analyserRTOS$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1618478931456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

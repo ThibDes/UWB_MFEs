@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+
+    <Button
+            android:id="@+id/button4"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="145dp"
+            android:onClick="startTestOrientation"
+            android:text="@string/test_orientation"/>
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:onClick="startNavigation"
+            android:text="@string/navigation"/>
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83dp"
+            android:onClick="startTestUSBConnection"
+            android:text="@string/test_usbconnection"/>
+
+    <Button
+            android:id="@+id/button6"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="212dp"
+            android:layout_marginBottom="471dp"
+            android:onClick="startCalibration"
+            android:text="@string/calibration"/>
+    <Button
+            android:text="@string/button_options"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="91dp" android:layout_centerHorizontal="true" android:id="@+id/button5"
+            android:onClick="startOptions"/>
+
+</RelativeLayout>

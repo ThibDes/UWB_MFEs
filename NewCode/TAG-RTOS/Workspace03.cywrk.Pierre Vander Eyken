@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace03\write_fonction_spi\TopDesign">
+<ExpandedNodeIds>
+<v>Workspace03</v>
+<v>Workspace03\write_fonction_spi</v>
+<v>Workspace03\write_fonction_spi\TopDesign</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Pins</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Analog</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Clocks</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Interrupts</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\DMA</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\System</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Directives</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Flash Security</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\EEPROM</v>
+<v>Workspace03\write_fonction_spi\Header Files</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\croutine.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\deprecated_definitions.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\event_groups.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\FreeRTOS.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\FreeRTOSConfig.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\list.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\message_buffer.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\mpu_prototypes.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\mpu_wrappers.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\portable.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\portmacro.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\projdefs.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\queue.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\semphr.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\stack_macros.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\StackMacros.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\stream_buffer.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\task.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS\timers.h</v>
+<v>Workspace03\write_fonction_spi\Header Files\cyapicallbacks.h</v>
+<v>Workspace03\write_fonction_spi\Source Files</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\croutine.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\event_groups.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\heap_2.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\list.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\mpu_wrappers.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\port.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\queue.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\stream_buffer.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\tasks.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS\timers.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\dwm1000.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\dwm1000.h</v>
+<v>Workspace03\write_fonction_spi\Source Files\main.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\main.h</v>
+<v>Workspace03\write_fonction_spi\Generated_Source</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace03</v>
+<v>Workspace03\write_fonction_spi</v>
+<v>Workspace03\write_fonction_spi\TopDesign</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Pins</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Analog</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Clocks</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Interrupts</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\DMA</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\System</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Directives</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\Flash Security</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.cydwr\EEPROM</v>
+<v>Workspace03\write_fonction_spi\Header Files</v>
+<v>Workspace03\write_fonction_spi\Header Files\FreeRTOS</v>
+<v>Workspace03\write_fonction_spi\Header Files\cyapicallbacks.h</v>
+<v>Workspace03\write_fonction_spi\Source Files</v>
+<v>Workspace03\write_fonction_spi\Source Files\FreeRTOS</v>
+<v>Workspace03\write_fonction_spi\Source Files\dwm1000.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\dwm1000.h</v>
+<v>Workspace03\write_fonction_spi\Source Files\main.c</v>
+<v>Workspace03\write_fonction_spi\Source Files\main.h</v>
+<v>Workspace03\write_fonction_spi\Generated_Source</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\Clock</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\cy_boot</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\IRQ</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\LED_1</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\LED_2</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\LED_3</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\LED_4</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\m_miso_pin</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\m_mosi_pin</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\m_sclk_pin</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\m_ss_pin</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\pin_1</v>
+<v>Workspace03\write_fonction_spi\Generated_Source\PSoC5\rst_in</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace03</v>
+<v>Workspace03\write_fonction_spi</v>
+<v>Workspace03\write_fonction_spi\TopDesign</v>
+<v>Workspace03\write_fonction_spi\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace03</v>
+<v>Workspace03\write_fonction_spi</v>
+<v>Workspace03\write_fonction_spi\TopDesign</v>
+<v>Workspace03\write_fonction_spi\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace03</v>
+<v>Workspace03\write_fonction_spi</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.gpdsc</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.rpt</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace03</v>
+<v>Workspace03\write_fonction_spi</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.gpdsc</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi.rpt</v>
+<v>Workspace03\write_fonction_spi\write_fonction_spi_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace03</v>
+<v>Workspace03\write_fonction_spi</v>
+<v>Workspace03\write_fonction_spi\PSoC 5LP Architecture TRM</v>
+<v>Workspace03\write_fonction_spi\CY8C58LP Family Datasheet</v>
+<v>Workspace03\write_fonction_spi\System Reference Guides</v>
+<v>Workspace03\write_fonction_spi\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace03\write_fonction_spi\cy_clock_v2_20</v>
+<v>Workspace03\write_fonction_spi\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>Workspace03\write_fonction_spi\cy_isr_v1_70.pdf</v>
+<v>Workspace03\write_fonction_spi\cy_pins_v2_20</v>
+<v>Workspace03\write_fonction_spi\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace03\write_fonction_spi\SPI_Master_v2_50.pdf</v>
+<v>Workspace03\write_fonction_spi\Timer_v2_80.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace03</v>
+<v>Workspace03\write_fonction_spi</v>
+<v>Workspace03\write_fonction_spi\PSoC 5LP Architecture TRM</v>
+<v>Workspace03\write_fonction_spi\CY8C58LP Family Datasheet</v>
+<v>Workspace03\write_fonction_spi\System Reference Guides</v>
+<v>Workspace03\write_fonction_spi\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace03\write_fonction_spi\cy_clock_v2_20</v>
+<v>Workspace03\write_fonction_spi\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>Workspace03\write_fonction_spi\cy_isr_v1_70.pdf</v>
+<v>Workspace03\write_fonction_spi\cy_pins_v2_20</v>
+<v>Workspace03\write_fonction_spi\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace03\write_fonction_spi\SPI_Master_v2_50.pdf</v>
+<v>Workspace03\write_fonction_spi\Timer_v2_80.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\write_fonction_spi.cydsn\main.c" />
+<name v=".\write_fonction_spi.cydsn\main.h" />
+<name v=".\write_fonction_spi.cydsn\TopDesign\TopDesign.cysch" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1284, 570" SelectedTabbedMdiWindow="ec1ff6ce-f654-4067-a281-bf5ee165d4f2"><DocumentWindow Key="C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\TAG-RTOS\write_fonction_spi.cydsn\main.c" Guid="ec1ff6ce-f654-4067-a281-bf5ee165d4f2" /><DocumentWindow Key="C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\TAG-RTOS\write_fonction_spi.cydsn\main.h" Guid="bf9db4ba-9c99-4e2e-97b7-b37625933be6" /><DocumentWindow Key="C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\TAG-RTOS\write_fonction_spi.cydsn\TopDesign\TopDesign.cysch" Guid="8d845833-1a25-41c4-9e94-8ea49be288c0" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b4fcad2e-e139-4c2f-abbb-a303ac9847e7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

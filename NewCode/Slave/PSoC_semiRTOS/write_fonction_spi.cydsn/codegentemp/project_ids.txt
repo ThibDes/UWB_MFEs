@@ -1,0 +1,6 @@
+C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\Slave\PSoC_semiRTOS\write_fonction_spi.cydsn\write_fonction_spi.cyprj|ce94490f-2df6-4981-b5b0-7217da1230e0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|fbcbc966-8ff1-47b8-a286-a7ab08620104
+C:\Users\Pierre Vander Eyken\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|7808bd61-9c12-4edf-b41e-d7e7f3e60f6c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|9a7742ba-a8b6-4846-b7c6-5b97b8e0d40f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|270dfa24-0e35-411a-9250-4f6f50103c9e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|09c2e3f4-db25-450f-beca-07f4099bff82

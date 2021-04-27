@@ -1,0 +1,46 @@
+--------------- Build Started: 02/18/2021 14:50:05 Project: write_fonction_spi, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+The code generation step is up to date.
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I.\FreeRTOS\include -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM3\ARM_GCC_541\Debug\main.o
+main.c: In function 'usb_out':
+main.c:140:12: warning: dereferencing 'void *' pointer
+     (void) *arg;
+            ^
+main.c: In function 'usb_in':
+main.c:162:12: warning: dereferencing 'void *' pointer
+     (void) *arg;
+            ^
+main.c: In function 'dummy_task':
+main.c:205:12: warning: dereferencing 'void *' pointer
+     (void) *arg;
+            ^
+main.c: In function 'state_machine_task':
+main.c:266:24: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  uint8_t slaveNummer = (uint8_t) arg;
+                        ^
+main.c:421:25: warning: 't6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             TroundSlave = (t6-t3);
+                         ^
+main.c:422:26: warning: 't5' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             TreplyMaster = (t5-t4);
+                          ^
+main.c:422:26: warning: 't4' may be used uninitialized in this function [-Wmaybe-uninitialized]
+main.c:421:25: warning: 't3' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             TroundSlave = (t6-t3);
+                         ^
+main.c:420:25: warning: 't2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             TreplySlave = (t3-t2);
+                         ^
+main.c:419:38: warning: 't1' may be used uninitialized in this function [-Wmaybe-uninitialized]
+                         TroundMaster = (t4-t1);         //Time calculation
+                                      ^
+arm-none-eabi-ar.exe -rs .\CortexM3\ARM_GCC_541\Debug\write_fonction_spi.a .\CortexM3\ARM_GCC_541\Debug\Clock.o .\CortexM3\ARM_GCC_541\Debug\m_miso_pin.o .\CortexM3\ARM_GCC_541\Debug\m_mosi_pin.o .\CortexM3\ARM_GCC_541\Debug\m_sclk_pin.o .\CortexM3\ARM_GCC_541\Debug\SPIM.o .\CortexM3\ARM_GCC_541\Debug\SPIM_PM.o .\CortexM3\ARM_GCC_541\Debug\SPIM_INT.o .\CortexM3\ARM_GCC_541\Debug\m_ss_pin.o .\CortexM3\ARM_GCC_541\Debug\IRQ.o .\CortexM3\ARM_GCC_541\Debug\pin_1.o .\CortexM3\ARM_GCC_541\Debug\LED_1.o .\CortexM3\ARM_GCC_541\Debug\USBP.o .\CortexM3\ARM_GCC_541\Debug\USBP_audio.o .\CortexM3\ARM_GCC_541\Debug\USBP_boot.o .\CortexM3\ARM_GCC_541\Debug\USBP_cdc.o .\CortexM3\ARM_GCC_541\Debug\USBP_cls.o .\CortexM3\ARM_GCC_541\Debug\USBP_descr.o .\CortexM3\ARM_GCC_541\Debug\USBP_drv.o .\CortexM3\ARM_GCC_541\Debug\USBP_episr.o .\CortexM3\ARM_GCC_541\Debug\USBP_hid.o .\CortexM3\ARM_GCC_541\Debug\USBP_pm.o .\CortexM3\ARM_GCC_541\Debug\USBP_std.o .\CortexM3\ARM_GCC_541\Debug\USBP_vnd.o .\CortexM3\ARM_GCC_541\Debug\USBP_midi.o .\CortexM3\ARM_GCC_541\Debug\USBP_msc.o .\CortexM3\ARM_GCC_541\Debug\LED_2.o .\CortexM3\ARM_GCC_541\Debug\LED_3.o .\CortexM3\ARM_GCC_541\Debug\LED_4.o .\CortexM3\ARM_GCC_541\Debug\Timer_1.o .\CortexM3\ARM_GCC_541\Debug\Timer_1_PM.o .\CortexM3\ARM_GCC_541\Debug\timer_clock.o .\CortexM3\ARM_GCC_541\Debug\rst_in.o .\CortexM3\ARM_GCC_541\Debug\USBP_Dm.o .\CortexM3\ARM_GCC_541\Debug\USBP_Dp.o .\CortexM3\ARM_GCC_541\Debug\CyDmac.o .\CortexM3\ARM_GCC_541\Debug\CyFlash.o .\CortexM3\ARM_GCC_541\Debug\CyLib.o .\CortexM3\ARM_GCC_541\Debug\cyPm.o .\CortexM3\ARM_GCC_541\Debug\CySpc.o .\CortexM3\ARM_GCC_541\Debug\cyutils.o .\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM3\ARM_GCC_541\Debug\GPIOJ11.o .\CortexM3\ARM_GCC_541\Debug\GPIOJ12.o .\CortexM3\ARM_GCC_541\Debug\GPIOJ13.o .\CortexM3\ARM_GCC_541\Debug\GPIOJ14.o .\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_541\Debug\write_fonction_spi.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o "C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\TAG-RTOS\PSoC\write_fonction_spi.cydsn\CortexM3\ARM_GCC_541\Debug\write_fonction_spi.elf" .\CortexM3\ARM_GCC_541\Debug\croutine.o .\CortexM3\ARM_GCC_541\Debug\event_groups.o .\CortexM3\ARM_GCC_541\Debug\heap_2.o .\CortexM3\ARM_GCC_541\Debug\list.o .\CortexM3\ARM_GCC_541\Debug\mpu_wrappers.o .\CortexM3\ARM_GCC_541\Debug\port.o .\CortexM3\ARM_GCC_541\Debug\queue.o .\CortexM3\ARM_GCC_541\Debug\stream_buffer.o .\CortexM3\ARM_GCC_541\Debug\tasks.o .\CortexM3\ARM_GCC_541\Debug\timers.o .\CortexM3\ARM_GCC_541\Debug\main.o .\CortexM3\ARM_GCC_541\Debug\dwm1000.o .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_541\Debug\cymetadata.o .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o .\CortexM3\ARM_GCC_541\Debug\write_fonction_spi.a "C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,.\CortexM3\ARM_GCC_541\Debug/write_fonction_spi.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+cyelftool.exe -C "C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\TAG-RTOS\PSoC\write_fonction_spi.cydsn\CortexM3\ARM_GCC_541\Debug\write_fonction_spi.elf" --flash_row_size 256 --flash_size 262144 --flash_offset 0x00000000
+No ELF section .cychecksum found, creating one
+Application checksum calculated and stored in ELF section .cychecksum
+Checksum calculated and stored in ELF section .cymeta
+cyelftool.exe -S "C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\TAG-RTOS\PSoC\write_fonction_spi.cydsn\CortexM3\ARM_GCC_541\Debug\write_fonction_spi.elf"
+Flash used: 19046 of 262144 bytes (7,3%).
+SRAM used: 36713 of 65536 bytes (56,0%). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 02/18/2021 14:50:07 ---------------
