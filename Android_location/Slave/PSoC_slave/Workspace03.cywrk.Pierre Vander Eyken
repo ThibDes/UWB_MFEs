@@ -244,19 +244,14 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs>
-<name v=".\write_fonction_spi.cydsn\main.c" />
-<name v=".\write_fonction_spi.cydsn\main.h" />
-<name v=".\write_fonction_spi.cydsn\dwm1000.c" />
-<name v=".\write_fonction_spi.cydsn\dwm1000.h" />
-</OpenDocs>
+<OpenDocs />
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
   Actipro Docking/MDI for WinForms
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1303, 572" SelectedTabbedMdiWindow="5bed3534-7b55-4058-a640-d4792948b50a"><DocumentWindow Key="C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\Slave\PSoC_slave\write_fonction_spi.cydsn\main.c" Guid="5bed3534-7b55-4058-a640-d4792948b50a" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b4fcad2e-e139-4c2f-abbb-a303ac9847e7" /><DocumentWindow Key="C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\Slave\PSoC_slave\write_fonction_spi.cydsn\main.h" Guid="dd270180-92cb-4c3c-8303-7dbdca4d8044" /><DocumentWindow Key="C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\Slave\PSoC_slave\write_fonction_spi.cydsn\dwm1000.c" Guid="c433851d-762b-498a-9cb7-046a7c9902c5" /><DocumentWindow Key="C:\Users\Pierre Vander Eyken\Desktop\memoire\NewCode\Slave\PSoC_slave\write_fonction_spi.cydsn\dwm1000.h" Guid="9793b6c6-4842-49f3-93ae-93aa04478287" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1342, 572" SelectedTabbedMdiWindow="b4fcad2e-e139-4c2f-abbb-a303ac9847e7"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b4fcad2e-e139-4c2f-abbb-a303ac9847e7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
