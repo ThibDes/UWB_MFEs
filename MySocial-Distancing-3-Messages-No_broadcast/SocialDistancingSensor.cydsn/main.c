@@ -484,11 +484,12 @@ void socialDistancindLoop(){
                 float  Epsil_CFO = sign_M*FREQUENCY_CONSTANT;
                 Epsil_CFO = Epsil_CFO*(CFO_Rx_M+CFO_Rx_S)/2;
                 
-                if (CFO_Rx_S==0){
-                     Epsil_CFO = Epsil_CFO*(CFO_Rx_M);
-                }
+                
                 float K = 1+Epsil_CFO; 
                 float TOF = (TroundMaster-K*TreplySlave)/2;
+                if (CFO_Rx_S==0){
+                     TOF = 0;    //Problem to fix/understand, sometimes the CFO is equalt to 0
+                }
                 float distance = LIGHT_SPEED * TOF * TICK2S; 
                 if (CFO_Rx_S==0){
                     distance = -1;
