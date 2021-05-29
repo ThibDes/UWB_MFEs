@@ -192,7 +192,7 @@ int main(void)
     if (ONLY_RECIEVER == 0 && USB_ANALYSE == 1){
     while(!USBUART_bGetConfiguration());
     }
-    LED2_Write(LIGHT_OFF); ;
+    LED2_Write(LIGHT_OFF); 
     socialDistancindLoop();
 }
 

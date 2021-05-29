@@ -327,8 +327,8 @@ void socialDistancindLoop(){
                             alertOn = 1;
                         }*/
                         remoteDeviceID = msg.from;
-                        //responseTime = 0; 
-                        responseTime = (rand() % (8u - 1u));
+                        responseTime = 0; 
+                        //responseTime = (rand() % (8u - 1u));
                         state = STATE_WAIT_RANDOM;
                     }
                     else if(msg.id == ANSWER_MSG && messageTimeout > 0u && msg.to == deviceID ){
@@ -364,7 +364,7 @@ void socialDistancindLoop(){
                             }
                         }
                         if (distMin > 0 && distMin < 10000){
-                                if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM * 3){ //3
+                                if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM * 24){ //3
                                     alertOn = 1;
                                 }
                                 if (distMin < SAFE_DISTANCE_CM + SAFE_DISTANCE_STEP_CM * 2){
